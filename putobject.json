@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowLambdaPutObject",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::911167927087:role/lambda-S3"
+      },
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::gou8m/*"
+    }
+  ]
+}
